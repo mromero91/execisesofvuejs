@@ -5,9 +5,14 @@ Vue.use(Vuex);
 
 export const store = new Vuex.Store({
 	state: {
-		name: 'Miguel Angel',
-		last_name: 'Romero',
-		age: 25,
-		ciudad: 'Stanta Catarina',
+		tasks: [
+			{title: 'Ir al centro', completed: false,},
+			{title: 'Read book of big data', completed: false,},
+		],
 	},
+	getters: {
+		tasksCompleted: (state) => {
+			return state.tasks.filter((task) => task.completed).length;
+		}
+	}
 });
