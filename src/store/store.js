@@ -5,14 +5,13 @@ Vue.use(Vuex);
 
 export const store = new Vuex.Store({
 	state: {
-		tasks: [
-			{title: 'Ir al centro', completed: false,},
-			{title: 'Read book of big data', completed: false,},
-		],
+		quantity: 0,
 	},
 	getters: {
-		tasksCompleted: (state) => {
-			return state.tasks.filter((task) => task.completed).length;
-		}
+		
+	},
+	mutations: {
+		increase: (state) => state.quantity++,
+		reduce: (state) => state.quantity--,
 	}
 });

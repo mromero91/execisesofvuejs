@@ -1,45 +1,20 @@
 <template>
 
   <div>
-    <h4 v-text="name"></h4>
-    <small v-text="age"></small>
+    <counter></counter>
   </div>
 
 </template>
 
 <script>
   import { mapState } from 'vuex'
+  import counter from './components/counter.vue';
 
   export default {
     data () {
-      return {
-      }
+      return {}
     },
-    /*
-
-      @msg option 1
-
-      computed: {
-        name () {
-          return this.$store.state.name;
-        },
-        age () {
-          return this.$store.state.age;
-        }
-      }
-    */
-
-    /*
-      @msg option 1
-
-      computed: mapState({
-        name: function (state) {
-          return state.name
-        },
-        age: (state => state.age ),
-      })
-    */
-    computed: mapState(['name', 'age']),
+    components: {counter},
   }
 </script>
 
