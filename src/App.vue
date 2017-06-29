@@ -19,5 +19,10 @@
   }
 </script>
 
-<style>
+<style module>
+
+  .blue {
+    color: blue;
+  }
+
 </style>

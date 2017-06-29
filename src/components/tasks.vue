@@ -3,7 +3,7 @@
 		<template>
 
 			<ul>
-				<li v-for="task in taskPending">
+				<li v-for="task in taskPending" >
 					<input type="checkbox" @click="updateTask(task)">
 					<label v-text="task.name"></label>
 				</li>
