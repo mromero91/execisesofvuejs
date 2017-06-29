@@ -8,6 +8,7 @@
 					<label v-text="task.name"></label>
 				</li>
 			</ul>
+
 			<hr />
 
 			<ul>
@@ -50,5 +51,12 @@
 	}
 </script>
 
-<style>
+<style scoped>
+	/*
+	 * @scoped is only this componented
+	 */
+
+	li {
+		color: red;
+	}
 </style>
