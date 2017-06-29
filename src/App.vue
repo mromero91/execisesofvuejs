@@ -2,25 +2,28 @@
 
   <div>
 
+    <counter
+      :quantity="quantity"
+      @increase="quantity++"
+      @reduce="quantity--"
+    ></counter>
+
   </div>
 
 </template>
 
 <script>
-  import tasks from './components/tasks.vue'
+  import counter from './components/counter.vue'
+
   export default {
-    components : {tasks},
+    components: {counter},
     data () {
       return {
+        quantity: 0,
       }
     }
   }
 </script>
 
-<style module>
-
-  .blue {
-    color: blue;
-  }
-
+<style>
 </style>

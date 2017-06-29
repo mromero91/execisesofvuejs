@@ -1,17 +1,7 @@
 import Vue from 'vue'
-
-const shared = {
-	user: {
-		name: 'Miguel Romero',
-	}
-}
+import App from './App.vue'
 
 new Vue({
-	el: '#app-first',
-	data: shared
-})
-
-new Vue({
-	el: '#app-second',
-	data: shared
+  el: '#app-first',
+  render: h => h(App)
 })
