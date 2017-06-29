@@ -1,16 +1,16 @@
 <template>
-<person></person>
+  <tasks></tasks>
 </template>
 
 <script>
-import person from './components/person.vue'
-export default {
-  components : {person},
-  data () {
-    return {
+  import tasks from './components/tasks.vue'
+  export default {
+    components : {tasks},
+    data () {
+      return {
+      }
     }
   }
-}
 </script>
 
 <style>
