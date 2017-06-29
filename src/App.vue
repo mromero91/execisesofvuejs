@@ -2,11 +2,13 @@
 
   <div>
 
-    <counter
+    <!-- <counter
       :quantity="quantity"
       @increase="quantity++"
       @reduce="quantity--"
-    ></counter>
+    ></counter> -->
+
+    <counter></counter>
 
   </div>
 

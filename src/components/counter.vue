@@ -10,7 +10,7 @@
 
 	export default {
 
-		props: ['quantity'],
+		// props: ['quantity'],
 		data () {
 			return {}
 		},
@@ -18,13 +18,18 @@
 		},
 		methods: {
 			increase() {
-				this.$emit('increase');
+				// this.$emit('increase');
+				this.$store.state.quantity++;
 			},
 			reduce() {
-				this.$emit('reduce');
+				// this.$emit('reduce');
+				this.$store.state.quantity--;
 			},
 		},
 		computed: {
+			quantity () {
+				return this.$store.state.quantity;
+			}
 		}
 	}
 </script>
