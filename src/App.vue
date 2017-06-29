@@ -1,11 +1,9 @@
 <template>
+
   <div>
-    <h1>List</h1>
-    <ul>
-      <li>Read book of big data </li>
-    </ul>
-    <tasks></tasks>
+
   </div>
+
 </template>
 
 <script>
